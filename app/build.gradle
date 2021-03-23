@@ -99,8 +99,6 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.3.0"
 
-    // Image Loading library Coil
-    implementation "io.coil-kt:coil:1.1.1"
 
     // Gson
     implementation 'com.google.code.gson:gson:2.8.6'

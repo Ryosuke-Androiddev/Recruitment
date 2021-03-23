@@ -1,4 +1,4 @@
-package com.example.recruitment
+package com.example.recruitment.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,9 +7,11 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.recruitment.R
 import com.example.recruitment.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -24,9 +26,9 @@ class MainActivity : AppCompatActivity() {
 
         navController = findNavController(R.id.navHostFragment)
         val appBarConfiguration = AppBarConfiguration(setOf(
-            R.id.listFragment,
-            R.id.applicationFragment,
-            R.id.favoriteFragment)
+                R.id.listFragment,
+                R.id.applicationFragment,
+                R.id.favoriteFragment)
         )
 
         binding.bottomNavigation.setupWithNavController(navController)
